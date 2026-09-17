@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+
+\usepackage{report}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\setcitestyle{aysep={,}}
+
+
+
+\title{Step 1: 1-bit Operations}
+
+\author{Connor Nauert, Daniel Okoh, James Webb\\
+\AND\\
+\AND
+\AND
+\AND
+\AND
+	CS.3339 Computer Architecture\\
+\AND
+	Texas State University\\
+}
+
+% Uncomment to remove the date
+\date{September 17, 2026}
+
+% Uncomment to override  the `A preprint' in the header
+\renewcommand{\headeright}{1-bit Operations - Blue Giraffes}
+\renewcommand{\undertitle}{Blue Giraffes}
+\renewcommand{\shorttitle}{}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\begin{document}
+\maketitle
+
+\newpage
+%\tableofcontents
+\thispagestyle{empty}
+
+
+\newpage
+\setcounter{page}{1}
+\section{Introduction}
+For this project, our group was tasked to design a new computer circuit from scratch. For the first step, we first had to install and learn the Hardware Description Language, Verilog. We then used this language to define the mathematics for a 1-bit Nand circuit. We also used a program called GTKWave that works in conjuction with the test modules we created to simulate the Waveforms of the circuit. 
+
+\section{Verilog Code}
+\label{sec:headings}
+
+In this section, we will go over every circuit and the associated Verilog code for each one, including the test modules.
+
+\subsection{Nand Circuit}
+The Nand circuit takes two inputs, A and B, with an output X. This output will only shoot back a 1 assuming that both A and B are not equal to 1, hence the Nand (Not and) logic gate.
+\lstinputlisting[language=Verilog]{Verilog/nand_test.v}
+
+To test the Nand circuit, we have created two registers, A and B, as well as a wire X. This way we are able to take two inputs at a time and test each possible input for the circuit. If it's working correctly, X should be equal to 1 for all inputs except when both A and B are equal to 1.
+\lstinputlisting[language=Verilog]{Verilog/nand_tb.v}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/NAND_IMG.jpg}
+    \caption{Nand truth table and gate}
+    \label{fig:enter-label}
+\end{figure}
+
+\newpage
+
+\section{Waveform Tests}
+
+In this section we will showcase the waveforms created using our testbenches for each circuit we coded in Verilog. We used GTKWave to create these waveforms.
+
+\subsection{Nand Circuit Waveform}
+
+At 0 ns, we can see that both A and B are 0, so the output X is 1.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/NAND_0ns.jpeg}
+    \caption{Nand Circuit with marker at 0ns}
+    \label{fig:enter-label}
+\end{figure}
+
+At 20 ns, A is 1 and B is 0, so X still remains at 1.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/NAND_20ns.jpeg}
+    \caption{Nand Circuit with marker at 20ns}
+    \label{fig:enter-label}
+\end{figure}
+
+At 40 ns, both A and B are 1, so X is now 0 because the Nand condition has been broken.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/NAND_40ns.jpeg}
+    \caption{Nand Circuit with marker at 40ns}
+    \label{fig:enter-label}
+\end{figure}
+
+\section{Conclusion}
+
+In conclusion, we successfully created and tested a Nand circuits using Verilog and GTKWave. Learning how to code in Verilog, at least for our purposes, was relatively simple with few difficulties. Using GTKWave was also fairly intuitive. The most difficulty our group has had so far was most likely creating this report in LaTeX, as we have some trouble with coding certain formatting as well as issues with figures floating around the document. Overall, though, it has been a smooth process and we have all learned quite a bit.
+
+\end{document}
+
+
+
