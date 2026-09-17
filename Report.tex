@@ -80,15 +80,29 @@
 \newpage
 \setcounter{page}{1}
 \section{Introduction}
-For this project, our group was tasked to design a new computer circuit from scratch. For the first step, we first had to install and learn the Hardware Description Language, Verilog. We then used this language to define the mathematics for a 1-bit Nand circuit. We also used a program called GTKWave that works in conjuction with the test modules we created to simulate the Waveforms of the circuit. 
+In this project, we are designing a small computer from scratch using Verilog for
+hardware programming. We will also be using Gtkwave to analyze test case waveforms and 
+display the inputs and outputs of the gates.
+
+Step 1 involves constructing the initial simple 1-bit gates.
 
 \section{Verilog Code}
 \label{sec:headings}
 
 In this section, we will go over every circuit and the associated Verilog code for each one, including the test modules.
 
+\subsection{Not Circuit}
+The Not circuit is the most simple of the 1-bit gates. One input, A, is inverted to an output X. If A is a 1, X will be a 0. If A is 0, X will be a 1.
+\lstinputlisting[language=Verilog]{Verilog/not_test.v}
+
+Testing the Not circuit involves creating a register A and measuring an output X. There are two possible states to be tested: when A is 0 and when A is 1.
+The pound symbol in the snippet below calls for the computer to wait for some amount of seconds, which allows us to observe how the gate acts
+over time.
+\lstinputlisting[language=Verilog]{Verilog/not_tb.v}
+
 \subsection{Nand Circuit}
-The Nand circuit takes two inputs, A and B, with an output X. This output will only shoot back a 1 assuming that both A and B are not equal to 1, hence the Nand (Not and) logic gate.
+The Nand circuit is composed of a Not gate and an And gate. Two inputs, A and B, are inputted into an And gate. The output of the And gate is then inverted and outputted to X.
+This means that if A and B are both 1, the And gate will invert the combined 1 into a 0. The other three states will output a 1.
 \lstinputlisting[language=Verilog]{Verilog/nand_test.v}
 
 To test the Nand circuit, we have created two registers, A and B, as well as a wire X. This way we are able to take two inputs at a time and test each possible input for the circuit. If it's working correctly, X should be equal to 1 for all inputs except when both A and B are equal to 1.
@@ -102,6 +116,17 @@ To test the Nand circuit, we have created two registers, A and B, as well as a w
 \end{figure}
 
 \newpage
+
+\subsection{Nor Circuit}
+The Nor circuit is similar to the Nand circuit in that it is the inverse of another gate. The Or gate will take two inputs, A and B.
+The Not gate will switch the bit outputted by the Or gate, which is then wired to X. If both A and B are 0, then X should be 1. Otherwise,
+X is 0.
+\lstinputlisting[language=Verilog]{Verilog/nor_test.v}
+
+The Nor circuit testbench also uses two inputs, one output, and four possible states.
+\lstinputlisting[language=Verilog]{Verilog/nor_tb.v}
+
+\subsection{1x4 Arithmetic Shift Circuit}
 
 \section{Waveform Tests}
 

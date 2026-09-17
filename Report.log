@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.18)  17 SEP 2026 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.18)  17 SEP 2026 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,9 +560,9 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 92.
+nput line 96.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-2.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -571,18 +571,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./Verilog/nand_test.v) (./Verilog/nand_tb.v
+ (./Verilog/not_test.v) (./Verilog/not_tb.v
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 nand_test 
-              uut(A, B, X); [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-sup
-er-t1.enc}])
-<figs/NAND_IMG.jpg, id=58, 1606.0pt x 904.37875pt>
+l.13 	
+      $dumpfile("not_tb.vcd"); [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-
+super-t1.enc}]) (./Verilog/nand_test.v) (./Verilog/nand_tb.v
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[2])
+<figs/NAND_IMG.jpg, id=103, 1606.0pt x 904.37875pt>
 File: figs/NAND_IMG.jpg Graphic file (type jpg)
 <use figs/NAND_IMG.jpg>
-Package pdftex.def Info: figs/NAND_IMG.jpg  used on input line 99.
+Package pdftex.def Info: figs/NAND_IMG.jpg  used on input line 113.
 (pdftex.def)             Requested size: 430.00462pt x 242.14317pt.
 
 
@@ -596,50 +605,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[2]
-<figs/NAND_0ns.jpeg, id=93, 1660.2025pt x 260.975pt>
-File: figs/NAND_0ns.jpeg Graphic file (type jpg)
-<use figs/NAND_0ns.jpeg>
-Package pdftex.def Info: figs/NAND_0ns.jpeg  used on input line 115.
-(pdftex.def)             Requested size: 430.00462pt x 67.59305pt.
-<figs/NAND_20ns.jpeg, id=94, 1774.63pt x 260.975pt>
-File: figs/NAND_20ns.jpeg Graphic file (type jpg)
-<use figs/NAND_20ns.jpeg>
-Package pdftex.def Info: figs/NAND_20ns.jpeg  used on input line 123.
-(pdftex.def)             Requested size: 430.00462pt x 63.23259pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/NAND_40ns.jpeg, id=95, 1669.23625pt x 260.975pt>
-File: figs/NAND_40ns.jpeg Graphic file (type jpg)
-<use figs/NAND_40ns.jpeg>
-Package pdftex.def Info: figs/NAND_40ns.jpeg  used on input line 131.
-(pdftex.def)             Requested size: 430.00462pt x 67.2267pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.139 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.139 
-       <./figs/NAND_IMG.jpg> <./figs/NAND_0ns.jpeg>]
+[3] (./Verilog/nor_test.v) (./Verilog/nor_tb.v
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -649,19 +615,69 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 reg 
+        A, B; <./figs/NAND_IMG.jpg>])
+<figs/NAND_0ns.jpeg, id=161, 1660.2025pt x 260.975pt>
+File: figs/NAND_0ns.jpeg Graphic file (type jpg)
+<use figs/NAND_0ns.jpeg>
+Package pdftex.def Info: figs/NAND_0ns.jpeg  used on input line 140.
+(pdftex.def)             Requested size: 430.00462pt x 67.59305pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[5]
+<figs/NAND_20ns.jpeg, id=199, 1774.63pt x 260.975pt>
+File: figs/NAND_20ns.jpeg Graphic file (type jpg)
+<use figs/NAND_20ns.jpeg>
+Package pdftex.def Info: figs/NAND_20ns.jpeg  used on input line 148.
+(pdftex.def)             Requested size: 430.00462pt x 63.23259pt.
+<figs/NAND_40ns.jpeg, id=200, 1669.23625pt x 260.975pt>
+File: figs/NAND_40ns.jpeg Graphic file (type jpg)
+<use figs/NAND_40ns.jpeg>
+Package pdftex.def Info: figs/NAND_40ns.jpeg  used on input line 156.
+(pdftex.def)             Requested size: 430.00462pt x 67.2267pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.165 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.140 \end{document}
+l.165 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.140 \end{document}
-                     <./figs/NAND_20ns.jpeg> <./figs/NAND_40ns.jpeg>]
-(./Report.aux)
+l.165 \end{document}
+                     <./figs/NAND_0ns.jpeg> <./figs/NAND_20ns.jpeg> <./figs/NAN
+D_40ns.jpeg>] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -670,24 +686,30 @@ L3 programming layer <2024-01-22>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: DFADB47E7782084D5BF70E37175C7FBC;706.
+
+Package rerunfilecheck Warning: File `Report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report.out':
+(rerunfilecheck)             Before: 9A8090972A5A98412BA983836987E3E0;936
+(rerunfilecheck)             After:  11362BA09B078FF062C1A8C09C75DF43;1142.
  ) 
 Here is how much of TeX's memory you used:
- 14928 strings out of 474222
- 232993 string characters out of 5748733
- 2012975 words of memory out of 5000000
- 36790 multiletter control sequences out of 15000+600000
+ 15045 strings out of 474222
+ 234797 string characters out of 5748733
+ 2017975 words of memory out of 5000000
+ 36808 multiletter control sequences out of 15000+600000
  605014 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,12n,93p,1003b,2064s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,13n,93p,1003b,2070s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb>
-Output written on Report.pdf (5 pages, 295348 bytes).
+Output written on Report.pdf (7 pages, 302211 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
- 43589 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 43605 words of extra memory for PDF output out of 51595 (max. 10000000)
 
