@@ -86,7 +86,7 @@ Step 1 involves constructing the initial simple 1-bit circuits.
 \section{Verilog Code}
 \label{sec:headings}
 
-In this section, we will go over every circuit and the associated Verilog code for each one, including the test modules.
+In this section we will show and explain our implementations of the circuits and their testbenches.
 
 \subsection{Not Circuit}
 The Not circuit is the most simple of the 1-bit gates. One input, A, is inverted to an output X. If A is a 1, X will be a 0. If A is 0, X will be a 1.
@@ -98,21 +98,12 @@ over time.
 \lstinputlisting[language=Verilog]{Verilog/not_tb.v}
 
 \subsection{Nand Circuit}
-The Nand circuit is composed of a Not gate and an And gate. Two inputs, A and B, are input into an And gate. The output of the And gate is then inverted and output to X.
+The Nand circuit is composed of a Not gate and an And gate. Two inputs, A and B, are entered into an And gate. The output of the And gate is then inverted and assigned to X.
 This means that if A and B are both 1, the And gate will invert the combined 1 into a 0. The other three states will output a 1.
 \lstinputlisting[language=Verilog]{Verilog/nand_test.v}
 
 The Nand circuit requires us to test for four seperate states. A and B are taken in as inputs and set to a pattern. We then wait ten nanoseconds, and repeat for all four states.
 \lstinputlisting[language=Verilog]{Verilog/nand_tb.v}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = 1.0\textwidth]{figs/NAND_IMG.jpg}
-    \caption{Nand truth table and gate}
-    \label{fig:enter-label}
-\end{figure}
-
-\newpage
 
 \subsection{Nor Circuit}
 The Nor circuit is similar to the Nand circuit in that it is the inverse of another gate. The Or gate will take two inputs, A and B.
@@ -120,7 +111,7 @@ The Not gate will switch the bit output by the Or gate, which is then wired to X
 X is 0.
 \lstinputlisting[language=Verilog]{Verilog/nor_test.v}
 
-The Nor circuit testbench also uses two inputs, one output, and four possible states.
+The Nor circuit testbench also uses two inputs and one output making four possible states.
 \lstinputlisting[language=Verilog]{Verilog/nor_tb.v}
 
 \subsection{1x4 Arithmetic Shift Circuit}
