@@ -10,7 +10,7 @@ nor_test uut(A, B, X);
 
 initial begin
 
-    $dumpfile("nor_tb.vcd");//holds output waveform
+    $dumpfile("nor_tb.vcd");
     $dumpvars(0, nor_tb);
 
     A = 0;

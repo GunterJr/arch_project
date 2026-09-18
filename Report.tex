@@ -34,10 +34,8 @@
 	Texas State University\\
 }
 
-% Uncomment to remove the date
 \date{September 17, 2026}
 
-% Uncomment to override  the `A preprint' in the header
 \renewcommand{\headeright}{1-bit Operations - Blue Giraffes}
 \renewcommand{\undertitle}{Blue Giraffes}
 \renewcommand{\shorttitle}{}
@@ -73,15 +71,14 @@
 \maketitle
 
 \newpage
-%\tableofcontents
 \thispagestyle{empty}
 
 
 \newpage
 \setcounter{page}{1}
 \section{Introduction}
-In this project, we are designing a small computer from scratch using Verilog for
-hardware programming. We will also be using Gtkwave to analyze test case waveforms and 
+In this project, we are designing a small computer from scratch by using Verilog for
+hardware programming. We will also be using GTKWave to analyze test case waveforms and
 display the inputs and outputs of the gates.
 
 Step 1 involves constructing the initial simple 1-bit gates.
@@ -132,30 +129,33 @@ The Nor circuit testbench also uses two inputs, one output, and four possible st
 
 In this section we will showcase the waveforms created using our testbenches for each circuit we coded in Verilog. We used GTKWave to create these waveforms.
 
+\subsection{Not Circuit Waveform}
+
+In the first half of the waveform, our input (A) is 0, or low. This is inverted to 1 (high) in the output X.
+After 20ns, A is flipped to 1 and X changes accordingly to 0.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/not_waveform.png}
+    \caption{Not circuit waveform. There are two sections since there are two states.}
+\end{figure}
+
 \subsection{Nand Circuit Waveform}
 
 At 0 ns, we can see that both A and B are 0, so the output X is 1.
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 1.0\textwidth]{figs/NAND_0ns.jpeg}
+    \includegraphics[width = 1.0\textwidth]{figs/nand_waveform.png}
     \caption{Nand Circuit with marker at 0ns}
-    \label{fig:enter-label}
 \end{figure}
 
-At 20 ns, A is 1 and B is 0, so X still remains at 1.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = 1.0\textwidth]{figs/NAND_20ns.jpeg}
-    \caption{Nand Circuit with marker at 20ns}
-    \label{fig:enter-label}
-\end{figure}
+\subsection{Nor Circuit Waveform}
 
-At 40 ns, both A and B are 1, so X is now 0 because the Nand condition has been broken.
+At 0 ns.
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 1.0\textwidth]{figs/NAND_40ns.jpeg}
-    \caption{Nand Circuit with marker at 40ns}
-    \label{fig:enter-label}
+    \includegraphics[width = 1.0\textwidth]{figs/nor_waveform.png}
+    \caption{Nor Circuit with marker at 0ns}
 \end{figure}
 
 \section{Conclusion}

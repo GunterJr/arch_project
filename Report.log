@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.18)  17 SEP 2026 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 SEP 2026 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -377,37 +377,27 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box55
 \@float@everytoks=\toks26
 \@floatcapt=\box56
-) (./Report.aux
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-)
+) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -475,24 +465,24 @@ LaTeX Font Info:    ... okay on input line 72.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 70.
 (./Report.out) (./Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 72.
-Package microtype Info: Applying patch `item' on input line 72.
-Package microtype Info: Applying patch `toc' on input line 72.
-Package microtype Info: Applying patch `eqnum' on input line 72.
-Package microtype Info: Applying patch `footnote' on input line 72.
-Package microtype Info: Applying patch `verbatim' on input line 72.
+LaTeX Info: Redefining \microtypecontext on input line 70.
+Package microtype Info: Applying patch `item' on input line 70.
+Package microtype Info: Applying patch `toc' on input line 70.
+Package microtype Info: Applying patch `eqnum' on input line 70.
+Package microtype Info: Applying patch `footnote' on input line 70.
+Package microtype Info: Applying patch `verbatim' on input line 70.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 72.
+LaTeX Info: Redefining \showhyphens on input line 70.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -528,7 +518,7 @@ e
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -537,7 +527,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -560,9 +550,9 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 96.
+nput line 93.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-6.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -577,8 +567,8 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.13 	
-      $dumpfile("not_tb.vcd"); [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-
-super-t1.enc}]) (./Verilog/nand_test.v) (./Verilog/nand_tb.v
+      $dumpfile("not_tb.vcd"); [1]) (./Verilog/nand_test.v)
+(./Verilog/nand_tb.v
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -588,10 +578,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2])
-<figs/NAND_IMG.jpg, id=103, 1606.0pt x 904.37875pt>
+<figs/NAND_IMG.jpg, id=115, 1606.0pt x 904.37875pt>
 File: figs/NAND_IMG.jpg Graphic file (type jpg)
 <use figs/NAND_IMG.jpg>
-Package pdftex.def Info: figs/NAND_IMG.jpg  used on input line 113.
+Package pdftex.def Info: figs/NAND_IMG.jpg  used on input line 110.
 (pdftex.def)             Requested size: 430.00462pt x 242.14317pt.
 
 
@@ -621,11 +611,11 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.6 reg 
         A, B; <./figs/NAND_IMG.jpg>])
-<figs/NAND_0ns.jpeg, id=161, 1660.2025pt x 260.975pt>
-File: figs/NAND_0ns.jpeg Graphic file (type jpg)
-<use figs/NAND_0ns.jpeg>
-Package pdftex.def Info: figs/NAND_0ns.jpeg  used on input line 140.
-(pdftex.def)             Requested size: 430.00462pt x 67.59305pt.
+<figs/not_waveform.png, id=173, 824.07875pt x 256.96pt>
+File: figs/not_waveform.png Graphic file (type png)
+<use figs/not_waveform.png>
+Package pdftex.def Info: figs/not_waveform.png  used on input line 139.
+(pdftex.def)             Requested size: 430.00462pt x 134.08263pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -639,16 +629,23 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [5]
-<figs/NAND_20ns.jpeg, id=199, 1774.63pt x 260.975pt>
-File: figs/NAND_20ns.jpeg Graphic file (type jpg)
-<use figs/NAND_20ns.jpeg>
-Package pdftex.def Info: figs/NAND_20ns.jpeg  used on input line 148.
-(pdftex.def)             Requested size: 430.00462pt x 63.23259pt.
-<figs/NAND_40ns.jpeg, id=200, 1669.23625pt x 260.975pt>
-File: figs/NAND_40ns.jpeg Graphic file (type jpg)
-<use figs/NAND_40ns.jpeg>
-Package pdftex.def Info: figs/NAND_40ns.jpeg  used on input line 156.
-(pdftex.def)             Requested size: 430.00462pt x 67.2267pt.
+<figs/nand_waveform.png, id=210, 775.89874pt x 247.92625pt>
+File: figs/nand_waveform.png Graphic file (type png)
+<use figs/nand_waveform.png>
+Package pdftex.def Info: figs/nand_waveform.png  used on input line 148.
+(pdftex.def)             Requested size: 430.00462pt x 137.40398pt.
+<figs/nor_waveform.png, id=211, 775.89874pt x 244.915pt>
+File: figs/nor_waveform.png Graphic file (type png)
+<use figs/nor_waveform.png>
+Package pdftex.def Info: figs/nor_waveform.png  used on input line 157.
+(pdftex.def)             Requested size: 430.00462pt x 135.73509pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -663,53 +660,51 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165 \end{document}
-                    
+l.164 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165 \end{document}
-                    
+l.164 
+       <./figs/not_waveform.png> <./figs/nand_waveform.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.165 \end{document}
-                     <./figs/NAND_0ns.jpeg> <./figs/NAND_20ns.jpeg> <./figs/NAN
-D_40ns.jpeg>] (./Report.aux)
+                     <./figs/nor_waveform.png>] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report.out':
-(rerunfilecheck)             Before: 9A8090972A5A98412BA983836987E3E0;936
-(rerunfilecheck)             After:  11362BA09B078FF062C1A8C09C75DF43;1142.
+Package rerunfilecheck Info: File `Report.out' has not changed.
+(rerunfilecheck)             Checksum: 36DBEDAC15AC5409DE639B1DF0E636E9;1470.
  ) 
 Here is how much of TeX's memory you used:
- 15045 strings out of 474222
- 234797 string characters out of 5748733
- 2017975 words of memory out of 5000000
- 36808 multiletter control sequences out of 15000+600000
- 605014 words of font info for 138 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 15047 strings out of 476182
+ 234896 string characters out of 5795595
+ 2015975 words of memory out of 5000000
+ 36558 multiletter control sequences out of 15000+600000
+ 604884 words of font info for 136 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  79i,13n,93p,1003b,2070s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb>
-Output written on Report.pdf (7 pages, 302211 bytes).
+ </home/connor/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.60
+0pk></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Report.pdf (8 pages, 127940 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 151 named destinations out of 1000 (max. 500000)
- 43605 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 43629 words of extra memory for PDF output out of 51595 (max. 10000000)
 
