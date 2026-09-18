@@ -11,7 +11,7 @@ bitshift uut(in, dir, out);
 
 initial begin
 
-    $dumpfile("bitshift_tb.vcd");//holds output waveform
+    $dumpfile("bitshift_tb.vcd");
     $dumpvars(0, bitshift_tb);
 
     in = 4'b0110;

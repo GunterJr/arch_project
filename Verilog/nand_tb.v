@@ -10,7 +10,7 @@ nand_test uut(A, B, X);
 
 initial begin
 
-    $dumpfile("nand_tb.vcd");//holds output waveform
+    $dumpfile("nand_tb.vcd");
     $dumpvars(0, nand_tb);
 
     A = 0;

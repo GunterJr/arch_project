@@ -98,11 +98,11 @@ over time.
 \lstinputlisting[language=Verilog]{Verilog/not_tb.v}
 
 \subsection{Nand Circuit}
-The Nand circuit is composed of a Not gate and an And gate. Two inputs, A and B, are inputted into an And gate. The output of the And gate is then inverted and outputted to X.
+The Nand circuit is composed of a Not gate and an And gate. Two inputs, A and B, are input into an And gate. The output of the And gate is then inverted and output to X.
 This means that if A and B are both 1, the And gate will invert the combined 1 into a 0. The other three states will output a 1.
 \lstinputlisting[language=Verilog]{Verilog/nand_test.v}
 
-To test the Nand circuit, we have created two registers, A and B, as well as a wire X. This way we are able to take two inputs at a time and test each possible input for the circuit. If it's working correctly, X should be equal to 1 for all inputs except when both A and B are equal to 1.
+The Nand circuit requires us to test for four seperate states. A and B are taken in as inputs and set to a pattern. We then wait ten nanoseconds, and repeat for all four states.
 \lstinputlisting[language=Verilog]{Verilog/nand_tb.v}
 
 \begin{figure}[h]
@@ -116,7 +116,7 @@ To test the Nand circuit, we have created two registers, A and B, as well as a w
 
 \subsection{Nor Circuit}
 The Nor circuit is similar to the Nand circuit in that it is the inverse of another gate. The Or gate will take two inputs, A and B.
-The Not gate will switch the bit outputted by the Or gate, which is then wired to X. If both A and B are 0, then X should be 1. Otherwise,
+The Not gate will switch the bit output by the Or gate, which is then wired to X. If both A and B are 0, then X should be 1. Otherwise,
 X is 0.
 \lstinputlisting[language=Verilog]{Verilog/nor_test.v}
 
@@ -125,15 +125,17 @@ The Nor circuit testbench also uses two inputs, one output, and four possible st
 
 \subsection{1x4 Arithmetic Shift Circuit}
 The Arithmetic Shift circuit will take a 4-bit pattern, and \emph{shift} them over to the left or to the right one bit. Due to this shifter being
-arithmetic, new bits will be zeros unless shifting we a negative integer to the right. Negative numbers will be sign-extended, and new bits will
+arithmetic, new bits will be zeros unless shifting a negative integer to the right. Right-shifted negative numbers will be sign-extended, and new bits will
 be ones.
 
 We implement this by using an array of 4-bit registers as input, which is then mapped to a 4-bit wire output. We also use a \emph{dir} register to
 specify the direction of the shift.
 \lstinputlisting[language=Verilog]{Verilog/bitshift.v}
 
-This testbench will set a 4-bit pattern, shift to the left, shift to the right, and repeat. For example, a pattern of 1001 shifted to the left would be 0010,
-and a pattern of 1010 shifted to the right would be 1101.
+This testbench will set a 4-bit pattern, shift to the right, reset, shift to the left, and repeat. For example, a pattern of \emph{1001} shifted to the left would be \emph{0010},
+and a pattern of \emph{1010} shifted to the right would be \emph{1101}.
+
+Also, note that \emph{4'b} is used prior to an assignment to tell Verilog we are assigning the bit array with \emph{four binary} values.
 
 \lstinputlisting[language=Verilog]{Verilog/bitshift_tb.v}
 
@@ -153,9 +155,12 @@ After 20ns, A is flipped to 1 and X changes accordingly to 0.
     \caption{Not circuit waveform. There are two sections since there are two states.}
 \end{figure}
 
+\newpage
+
 \subsection{Nand Circuit Waveform}
 
-test
+A and B are initially set to 0, and our output X is correctly set to 1. X stays high through two other states until both A and B are set to 1 at 30ns. Since Nand
+is the inverse of And, X is then set to 0.
 
 \begin{figure}[h]
     \centering
@@ -165,7 +170,8 @@ test
 
 \subsection{Nor Circuit Waveform}
 
-test
+Again, A and B are set to 0 at the start of the test. X is high for 10ns since neither A nor B are high. For the remaining 30ns, at least one input
+is a 1 causing X to become a 0.
 
 \begin{figure}[h]
     \centering
@@ -173,9 +179,17 @@ test
     \caption{Nor circuit waveform.}
 \end{figure}
 
+\newpage
+
 \subsection{1x4 Arithmetic Shifter Waveform}
 
-test
+The Arithmetic shifter waveform looks quite complex, but each test case can be explained easily.
+There are two 4-bit arrays: one for an input and another for the shifted output.
+On the top, there is a direction register that shifts to the right when 0 and to the left when 1.
+
+At the start, the input array reads \emph{0110}, and the direction reads \emph{0}. This means that we will
+shift the input to the right one bit. Sure enough, the output is correctly set to the shifted pattern of \emph{0011}.
+When the direction bit flips to left after 10ns, the output becomes \emph{1100}.
 
 \begin{figure}[h]
     \centering
