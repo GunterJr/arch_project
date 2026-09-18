@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 SEP 2026 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 SEP 2026 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,7 +578,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2])
-<figs/NAND_IMG.jpg, id=115, 1606.0pt x 904.37875pt>
+<figs/NAND_IMG.jpg, id=119, 1606.0pt x 904.37875pt>
 File: figs/NAND_IMG.jpg Graphic file (type jpg)
 <use figs/NAND_IMG.jpg>
 Package pdftex.def Info: figs/NAND_IMG.jpg  used on input line 110.
@@ -610,16 +610,7 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.6 reg 
-        A, B; <./figs/NAND_IMG.jpg>])
-<figs/not_waveform.png, id=173, 824.07875pt x 256.96pt>
-File: figs/not_waveform.png Graphic file (type png)
-<use figs/not_waveform.png>
-Package pdftex.def Info: figs/not_waveform.png  used on input line 139.
-(pdftex.def)             Requested size: 430.00462pt x 134.08263pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+        A, B; <./figs/NAND_IMG.jpg>]) (./Verilog/bitshift.v
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -628,46 +619,43 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[5]
-<figs/nand_waveform.png, id=210, 775.89874pt x 247.92625pt>
+[5]) (./Verilog/bitshift_tb.v
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[6])
+<figs/not_waveform.png, id=260, 824.07875pt x 256.96pt>
+File: figs/not_waveform.png Graphic file (type png)
+<use figs/not_waveform.png>
+Package pdftex.def Info: figs/not_waveform.png  used on input line 152.
+(pdftex.def)             Requested size: 430.00462pt x 134.08263pt.
+<figs/nand_waveform.png, id=261, 775.89874pt x 247.92625pt>
 File: figs/nand_waveform.png Graphic file (type png)
 <use figs/nand_waveform.png>
-Package pdftex.def Info: figs/nand_waveform.png  used on input line 148.
+Package pdftex.def Info: figs/nand_waveform.png  used on input line 162.
 (pdftex.def)             Requested size: 430.00462pt x 137.40398pt.
-<figs/nor_waveform.png, id=211, 775.89874pt x 244.915pt>
-File: figs/nor_waveform.png Graphic file (type png)
-<use figs/nor_waveform.png>
-Package pdftex.def Info: figs/nor_waveform.png  used on input line 157.
-(pdftex.def)             Requested size: 430.00462pt x 135.73509pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<figs/nor_waveform.png, id=262, 775.89874pt x 244.915pt>
+File: figs/nor_waveform.png Graphic file (type png)
+<use figs/nor_waveform.png>
+Package pdftex.def Info: figs/nor_waveform.png  used on input line 172.
+(pdftex.def)             Requested size: 430.00462pt x 135.73509pt.
 
-Underfull \vbox (badness 1259) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.164 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.164 
-       <./figs/not_waveform.png> <./figs/nand_waveform.png>]
+<figs/bitshift.png, id=263, 778.91pt x 284.06125pt>
+File: figs/bitshift.png Graphic file (type png)
+<use figs/bitshift.png>
+Package pdftex.def Info: figs/bitshift.png  used on input line 182.
+(pdftex.def)             Requested size: 430.00462pt x 156.81496pt.
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -677,34 +665,74 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.184 \end{figure}
+                   <./figs/not_waveform.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165 \end{document}
-                     <./figs/nor_waveform.png>] (./Report.aux)
+l.190 \end{document}
+                     <./figs/nand_waveform.png> <./figs/nor_waveform.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \end{document}
+                     <./figs/bitshift.png>] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 36DBEDAC15AC5409DE639B1DF0E636E9;1470.
+(rerunfilecheck)             Checksum: AABEDB856ACC21534171BE494378EF84;1692.
  ) 
 Here is how much of TeX's memory you used:
- 15047 strings out of 476182
- 234896 string characters out of 5795595
- 2015975 words of memory out of 5000000
- 36558 multiletter control sequences out of 15000+600000
- 604884 words of font info for 136 fonts, out of 8000000 for 9000
+ 15148 strings out of 476182
+ 236389 string characters out of 5795595
+ 2096975 words of memory out of 5000000
+ 36582 multiletter control sequences out of 15000+600000
+ 608558 words of font info for 147 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  79i,13n,93p,1003b,2070s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/connor/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.60
 0pk></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Report.pdf (8 pages, 127940 bytes).
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Report.pdf (10 pages, 156887 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 154 named destinations out of 1000 (max. 500000)
- 43629 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 47738 words of extra memory for PDF output out of 51595 (max. 10000000)
 
