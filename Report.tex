@@ -79,7 +79,9 @@ In this project, we are designing a small computer from scratch by using Verilog
 hardware programming. We will also be using GTKWave to analyze test case waveforms and
 display the inputs and outputs of the gates.
 
-Step 1 involves constructing the initial simple 1-bit circuits.
+Step 2 involves building upon small 1-bit circuits made in step 1 by increasing
+input size to 4 bits. These new gates will also be supplemented with examples
+of adders, subtractors, multipliers, and dividers commonly used in ALUs.
 
 \section{Verilog Code}
 \label{sec:headings}
@@ -89,48 +91,71 @@ In this section we will show and explain our implementations of the circuits and
 \subsection{And Circuit}
 The And circuit will take 2 4-bit inputs A and B, and output 1 4-bit output X. For each bit of A and B, it will output a 1 for 1 and 1, and a 0 otherwise (0101, 0011 = 0001).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/and4.v}
+
 \subsection{Nand Circuit}
 The Nand circuit is composed of a Not gate and an And gate. Two 4-bit inputs, A and B, are entered into an And gate. The output of the And gate is then inverted and assigned to X.
 This means that if the same bit of A and B are both 1, the And gate will invert the combined 1 into a 0. The other three states will output a 1 (0101, 0011 = 1110).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/nand4.v}
 
 The Nand circuit requires us to test for four seperate states. A and B are taken in as inputs and set to a pattern. We then wait ten nanoseconds, and repeat for all four states.
 
 \subsection{Or Circuit}
 The Or circuit takes 2 4-bit inputs A and B and will output for each bit a 0 on 0 and 0, and a 1 otherwise into a 4-bit output X (0101, 0011 = 0111).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/or4.v}
 
 \subsection{Nor Circuit}
 The Nor circuit is similar to the Nand circuit in that it is the inverse of another gate. The Or gate will take two 4-bit inputs, A and B.
 The Not gate will switch each bit output by the Or gate, which is then wired to X. If both A and B are 0, then X should be 1. Otherwise,
 X is 0 (0101, 0011 = 1000).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/nor4.v}
+
 \subsection{Xor Circuit}
 The Xor circuit will take 2 4-bit inputs A and B and will output for each bit a 0 on 0 and 0 or 1 and 1, and a 1 otherwise into a 4-bit output X (0101, 0011 = 0110).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/xor4.v}
 
 \subsection{Xnor Circuit}
 The Xnor circuit is the inverse of Xor and will take 2 4-bit inputs A and B and will output for each bit a 1 on 0 and 0 or 1 and 1, and a 0 otherwise into a 4-bit output X (0101, 0011 = 1001).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/xnor4.v}
+
 \subsection{Not Circuit}
 The Not circuit takes one 4-bit input A and flips each bit from 1 to 0 or from 0 to 1 and then outputs 1 4-bit output X (0101 = 1010).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/not4.v}
 
 Testing the Not circuit involves creating a register A and measuring an output X. There are two possible states to be tested: when a bit of A is 0 and when a bit of A is 1.
 The pound symbol in the snippet below calls for the computer to wait for some amount of nanoseconds, which allows us to observe how the gate acts
 over time.
 
-\subsection{2x4 bit Arithmetic Shifter}
+\subsection{2$\times$4 bit Arithmetic Shifter}
 The Arithmetic shifter circuit takes 2 inputs A and B, and then shifts A according to B. The left-most bit of B determines if it shifts left or right, with 0 being left and 1 being right. The right-most bit determines what the shift will fill with (0 with 0, 1 with 1). The middle 2 bits determine the amount it shifts (01 shift 1, 11 shift 3).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/shift4.v}
 
 \subsection{Addition Circuit}
 The Addition circuit takes 2 inputs A and B, does A+B, and then outputs one 4-bit output Sum (0101, 0011 = 1000).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/add4.v}
+
 \subsection{Subtraction Circuit}
 The Subtraction circuit takes 2 inputs A and B, does A-B, and then outputs 1 4-bit 2s-complement number Diff, with the sign bit being outputted in Bout (0101, 0011 = 0010, 0).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/sub4.v}
 
 \subsection{Multiplication Circuit}
 The Multiplication circuit takes 2 4-bit outputs A and B, does A*B, and then outputs into 2 4-bit outputs X and Y, with Y being the top 4 bits, and X being the bottom 4 bits (0101, 0011 = 0000,1111).
 
+\lstinputlisting[language=Verilog]{Verilog/step2/mul4.v}
+
 \subsection{Division Circuit}
 The Division Circuit takes 2 4-bit inputs A and B, does A/B, then outputs 2 4-bit outputs X and Y, with X being the quotient and Y being the remainder (1101, 0011 = 0100, 0001).
+
+\lstinputlisting[language=Verilog]{Verilog/step2/div4.v}
 
 \section{Waveform Tests}
 

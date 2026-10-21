@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 SEP 2026 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.18)  20 OCT 2026 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,24 +380,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -465,24 +465,24 @@ LaTeX Font Info:    ... okay on input line 70.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 68.
 (./Report.out) (./Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 70.
-Package microtype Info: Applying patch `item' on input line 70.
-Package microtype Info: Applying patch `toc' on input line 70.
-Package microtype Info: Applying patch `eqnum' on input line 70.
-Package microtype Info: Applying patch `footnote' on input line 70.
-Package microtype Info: Applying patch `verbatim' on input line 70.
+LaTeX Info: Redefining \microtypecontext on input line 68.
+Package microtype Info: Applying patch `item' on input line 68.
+Package microtype Info: Applying patch `toc' on input line 68.
+Package microtype Info: Applying patch `eqnum' on input line 68.
+Package microtype Info: Applying patch `footnote' on input line 68.
+Package microtype Info: Applying patch `verbatim' on input line 68.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 70.
+LaTeX Info: Redefining \showhyphens on input line 68.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -518,7 +518,7 @@ e
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -527,7 +527,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -550,9 +550,9 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 93.
+nput line 94.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -561,14 +561,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./Verilog/not_test.v) (./Verilog/not_tb.v
+
+(./Verilog/step2/and4.v)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 	
-      $dumpfile("not_tb.vcd"); [1]) (./Verilog/nand_test.v)
-(./Verilog/nand_tb.v
+l.99 
+      [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+(./Verilog/step2/nand4.v) (./Verilog/step2/or4.v
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -577,7 +578,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[2]) (./Verilog/nor_test.v)
+[2]) (./Verilog/step2/nor4.v)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -586,7 +587,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[3] (./Verilog/nor_tb.v)
+[3] (./Verilog/step2/xor4.v) (./Verilog/step2/xnor4.v
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -595,7 +596,23 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[4] (./Verilog/bitshift.v) (./Verilog/bitshift_tb.v
+[4]) (./Verilog/step2/not4.v)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Underfull \vbox (badness 5331) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -604,14 +621,59 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[5])
-<figs/not_waveform.png, id=243, 824.07875pt x 256.96pt>
+[5] (./Verilog/step2/shift4.v
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[6]) (./Verilog/step2/add4.v
+Underfull \vbox (badness 2189) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[7]) (./Verilog/step2/sub4.v) (./Verilog/step2/mul4.v
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[8]) (./Verilog/step2/div4.v
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[9])
+<figs/not_waveform.png, id=388, 824.07875pt x 256.96pt>
 File: figs/not_waveform.png Graphic file (type png)
 <use figs/not_waveform.png>
-Package pdftex.def Info: figs/not_waveform.png  used on input line 145.
+Package pdftex.def Info: figs/not_waveform.png  used on input line 171.
 (pdftex.def)             Requested size: 430.00462pt x 134.08263pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -619,49 +681,46 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[6
+[10]
+<figs/nand_waveform.png, id=414, 775.89874pt x 247.92625pt>
+File: figs/nand_waveform.png Graphic file (type png)
+<use figs/nand_waveform.png>
+Package pdftex.def Info: figs/nand_waveform.png  used on input line 184.
+(pdftex.def)             Requested size: 430.00462pt x 137.40398pt.
+<figs/nor_waveform.png, id=415, 775.89874pt x 244.915pt>
+File: figs/nor_waveform.png Graphic file (type png)
+<use figs/nor_waveform.png>
+Package pdftex.def Info: figs/nor_waveform.png  used on input line 195.
+(pdftex.def)             Requested size: 430.00462pt x 135.73509pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 \newpage
-               <./figs/not_waveform.png>]
-<figs/nand_waveform.png, id=267, 775.89874pt x 247.92625pt>
-File: figs/nand_waveform.png Graphic file (type png)
-<use figs/nand_waveform.png>
-Package pdftex.def Info: figs/nand_waveform.png  used on input line 158.
-(pdftex.def)             Requested size: 430.00462pt x 137.40398pt.
-<figs/nor_waveform.png, id=268, 775.89874pt x 244.915pt>
-File: figs/nor_waveform.png Graphic file (type png)
-<use figs/nor_waveform.png>
-Package pdftex.def Info: figs/nor_waveform.png  used on input line 169.
-(pdftex.def)             Requested size: 430.00462pt x 135.73509pt.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[7
+l.199 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.173 \newpage
-              
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.173 \newpage
-               <./figs/nand_waveform.png> <./figs/nor_waveform.png>]
-<figs/bitshift.png, id=275, 778.91pt x 284.06125pt>
+l.199 \newpage
+               <./figs/not_waveform.png> <./figs/nand_waveform.png>]
+<figs/bitshift.png, id=422, 778.91pt x 284.06125pt>
 File: figs/bitshift.png Graphic file (type png)
 <use figs/bitshift.png>
-Package pdftex.def Info: figs/bitshift.png  used on input line 187.
+Package pdftex.def Info: figs/bitshift.png  used on input line 213.
 (pdftex.def)             Requested size: 430.00462pt x 156.81496pt.
 
 
@@ -672,36 +731,52 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[8
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.227 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.202 \end{document}
-                     <./figs/bitshift.png>] (./Report.aux)
+l.227 
+       <./figs/nor_waveform.png> <./figs/bitshift.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[13] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: AABEDB856ACC21534171BE494378EF84;1692.
+(rerunfilecheck)             Checksum: 91780E69AC5CE86C7055F6E902F54C41;2753.
  ) 
 Here is how much of TeX's memory you used:
- 15136 strings out of 476182
- 236163 string characters out of 5795595
- 2042975 words of memory out of 5000000
- 36574 multiletter control sequences out of 15000+600000
- 608769 words of font info for 148 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 79i,13n,93p,1003b,2066s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/connor/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.60
-0pk></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (9 pages, 109793 bytes).
+ 15308 strings out of 474222
+ 238775 string characters out of 5748733
+ 2230975 words of memory out of 5000000
+ 36858 multiletter control sequences out of 15000+600000
+ 609317 words of font info for 158 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 79i,13n,93p,1003b,2103s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on Report.pdf (14 pages, 157932 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 203 named destinations out of 1000 (max. 500000)
- 47733 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 493 compressed objects within 5 object streams
+ 315 named destinations out of 1000 (max. 500000)
+ 47797 words of extra memory for PDF output out of 51595 (max. 10000000)
 
