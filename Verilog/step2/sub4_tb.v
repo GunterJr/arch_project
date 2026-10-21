@@ -12,7 +12,7 @@
 module sub4_tb;  // testbench has no ports
 
 reg [3:0] A, B;  // inputs driven by the test
-reg Bin;   driven by the test
+reg Bin;   // driven by the test
 wire [3:0] Diff;  // difference observed by the test
 wire Bout;  // borrow out observed by the test
 

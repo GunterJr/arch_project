@@ -7,7 +7,7 @@
  */
 
 `timescale 1ns / 1ns   // time unit / precision
-`include "div4.v". // pull in the module under test
+`include "div4.v" // pull in the module under test
 
 module div4_tb;  // testbench has no ports
 
@@ -16,7 +16,7 @@ wire [3:0] X, Y;  // quotient and remainder observed by the test
 
 div4 uut(A, B, X, Y);  // unit under test
 
-initial begin. // test sequence
+initial begin // test sequence
 
     $dumpfile("div4_tb.vcd");   // waveform file name
     $dumpvars(0, div4_tb);   // record every signal
