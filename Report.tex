@@ -1,0 +1,206 @@
+ \documentclass[12pt]{article}
+
+\usepackage{report}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\setcitestyle{aysep={,}}
+
+\title{Step 2: 4-bit Operations}
+
+\author{Connor Nauert, Daniel Okoh, James Webb\\
+\AND\\
+\AND
+\AND
+\AND
+\AND
+	CS.3339 Computer Architecture\\
+\AND
+	Texas State University\\
+}
+
+\date{October 20, 2026}
+
+\renewcommand{\headeright}{4-bit Operations - Blue Giraffes}
+\renewcommand{\undertitle}{Blue Giraffes}
+\renewcommand{\shorttitle}{}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\begin{document}
+\maketitle
+
+\newpage
+\thispagestyle{empty}
+
+
+\newpage
+\setcounter{page}{1}
+\section{Introduction}
+In this project, we are designing a small computer from scratch by using Verilog for
+hardware programming. We will also be using GTKWave to analyze test case waveforms and
+display the inputs and outputs of the gates.
+
+Step 1 involves constructing the initial simple 1-bit circuits.
+
+\section{Verilog Code}
+\label{sec:headings}
+
+In this section we will show and explain our implementations of the circuits and their testbenches.
+
+\subsection{And Circuit}
+The And circuit will take 2 4-bit inputs A and B, and output 1 4-bit output X. For each bit of A and B, it will output a 1 for 1 and 1, and a 0 otherwise (0101, 0011 = 0001).
+
+\subsection{Nand Circuit}
+The Nand circuit is composed of a Not gate and an And gate. Two 4-bit inputs, A and B, are entered into an And gate. The output of the And gate is then inverted and assigned to X.
+This means that if the same bit of A and B are both 1, the And gate will invert the combined 1 into a 0. The other three states will output a 1 (0101, 0011 = 1110).
+
+The Nand circuit requires us to test for four seperate states. A and B are taken in as inputs and set to a pattern. We then wait ten nanoseconds, and repeat for all four states.
+
+\subsection{Or Circuit}
+The Or circuit takes 2 4-bit inputs A and B and will output for each bit a 0 on 0 and 0, and a 1 otherwise into a 4-bit output X (0101, 0011 = 0111).
+
+
+\subsection{Nor Circuit}
+The Nor circuit is similar to the Nand circuit in that it is the inverse of another gate. The Or gate will take two 4-bit inputs, A and B.
+The Not gate will switch each bit output by the Or gate, which is then wired to X. If both A and B are 0, then X should be 1. Otherwise,
+X is 0 (0101, 0011 = 1000).
+
+\subsection{Xor Circuit}
+The Xor circuit will take 2 4-bit inputs A and B and will output for each bit a 0 on 0 and 0 or 1 and 1, and a 1 otherwise into a 4-bit output X (0101, 0011 = 0110).
+
+\subsection{Xnor Circuit}
+The Xnor circuit is the inverse of Xor and will take 2 4-bit inputs A and B and will output for each bit a 1 on 0 and 0 or 1 and 1, and a 0 otherwise into a 4-bit output X (0101, 0011 = 1001).
+
+\subsection{Not Circuit}
+The Not circuit takes one 4-bit input A and flips each bit from 1 to 0 or from 0 to 1 and then outputs 1 4-bit output X (0101 = 1010).
+
+Testing the Not circuit involves creating a register A and measuring an output X. There are two possible states to be tested: when a bit of A is 0 and when a bit of A is 1.
+The pound symbol in the snippet below calls for the computer to wait for some amount of nanoseconds, which allows us to observe how the gate acts
+over time.
+
+\subsection{2x4 bit Arithmetic Shifter}
+The Arithmetic shifter circuit takes 2 inputs A and B, and then shifts A according to B. The left-most bit of B determines if it shifts left or right, with 0 being left and 1 being right. The right-most bit determines what the shift will fill with (0 with 0, 1 with 1). The middle 2 bits determine the amount it shifts (01 shift 1, 11 shift 3).
+
+\subsection{Addition Circuit}
+The Addition circuit takes 2 inputs A and B, does A+B, and then outputs one 4-bit output Sum (0101, 0011 = 1000).
+
+\subsection{Subtraction Circuit}
+The Subtraction circuit takes 2 inputs A and B, does A-B, and then outputs 1 4-bit 2s-complement number Diff, with the sign bit being outputted in Bout (0101, 0011 = 0010, 0).
+
+\subsection{Multiplication Circuit}
+The Multiplication circuit takes 2 4-bit outputs A and B, does A*B, and then outputs into 2 4-bit outputs X and Y, with Y being the top 4 bits, and X being the bottom 4 bits (0101, 0011 = 0000,1111).
+
+\subsection{Division Circuit}
+The Division Circuit takes 2 4-bit inputs A and B, does A/B, then outputs 2 4-bit outputs X and Y, with X being the quotient and Y being the remainder (1101, 0011 = 0100, 0001).
+
+\section{Waveform Tests}
+
+Now, we will showcase waveforms created by testing our twelve circuits. All waves were generated by vvp and rendered with GTKWave.
+
+\subsection{Not Circuit Waveform}
+
+In the first half of the waveform, our input (A) is 0, or low. This is inverted to 1 (high) in the output X.
+After 20ns, A is flipped to 1 and X changes accordingly to 0.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/not_waveform.png}
+    \caption{Not circuit waveform. There are two sections since there are two states.}
+\end{figure}
+
+\newpage
+
+\subsection{Nand Circuit Waveform}
+
+A and B are initially set to 0, and our output X is correctly set to 1. X stays high through two other states until both A and B are set to 1 at 30ns. Since Nand
+is the inverse of And, X is then set to 0.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/nand_waveform.png}
+    \caption{Nand circuit waveform. Notice we now have four states.}
+\end{figure}
+
+\subsection{Nor Circuit Waveform}
+
+Again, A and B are set to 0 at the start of the test. X is high for 10ns since neither A nor B are high. For the remaining 30ns, at least one input
+is a 1 causing X to become a 0.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/nor_waveform.png}
+    \caption{Nor circuit waveform.}
+\end{figure}
+
+\newpage
+
+\subsection{1x4 Arithmetic Shifter Waveform}
+
+The Arithmetic shifter waveform looks quite complex, but each test case can be explained easily.
+There are two 4-bit arrays: one for an input and another for the shifted output.
+On the top, there is a direction register that shifts to the right when 0 and to the left when 1.
+
+At the start, the input array reads \emph{0110}, and the direction reads \emph{0}. This means that we will
+shift the input to the right one bit. Sure enough, the output is correctly set to the shifted pattern of \emph{0011}.
+When the direction bit flips to left after 10ns, the output becomes \emph{1100}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1.0\textwidth]{figs/bitshift.png}
+    \caption{Arithmetic shifter waveforms, with a DIR register and 8 bits.}
+\end{figure}
+
+\section{Conclusion}
+
+We have successfully created four 1-bit circuits in Verilog, tested them under specific
+inputs, and observed their behavior through waveforms in GTKWave.
+
+We found that the most difficult part of this project was learning how Verilog
+source files were properly structured and compiled. Luckily, there was a plethora 
+of online documentation and examples on the internet to learn from. LaTeX was helpful 
+as the typesetting was done for us and we could focus on the content of the report. We used
+Git to collaborate and track changes. We trust that the next few project steps will go smoother considering everything we have learned.
+
+\end{document}
+
+
+
