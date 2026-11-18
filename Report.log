@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 NOV 2026 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.17)  17 NOV 2026 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,22 +644,22 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 <figs/step3/and.png, id=283, 1348.03625pt x 147.55125pt>
 File: figs/step3/and.png Graphic file (type png)
 <use figs/step3/and.png>
-Package pdftex.def Info: figs/step3/and.png  used on input line 137.
+Package pdftex.def Info: figs/step3/and.png  used on input line 142.
 (pdftex.def)             Requested size: 430.00462pt x 47.0665pt.
 <figs/step3/nand.png, id=284, 1355.0625pt x 129.48375pt>
 File: figs/step3/nand.png Graphic file (type png)
 <use figs/step3/nand.png>
-Package pdftex.def Info: figs/step3/nand.png  used on input line 143.
+Package pdftex.def Info: figs/step3/nand.png  used on input line 148.
 (pdftex.def)             Requested size: 430.00462pt x 41.08987pt.
 <figs/step3/or.png, id=285, 1368.11125pt x 129.48375pt>
 File: figs/step3/or.png Graphic file (type png)
 <use figs/step3/or.png>
-Package pdftex.def Info: figs/step3/or.png  used on input line 149.
+Package pdftex.def Info: figs/step3/or.png  used on input line 154.
 (pdftex.def)             Requested size: 430.00462pt x 40.6967pt.
 <figs/step3/nor.png, id=286, 1360.08125pt x 154.5775pt>
 File: figs/step3/nor.png Graphic file (type png)
 <use figs/step3/nor.png>
-Package pdftex.def Info: figs/step3/nor.png  used on input line 155.
+Package pdftex.def Info: figs/step3/nor.png  used on input line 160.
 (pdftex.def)             Requested size: 430.00462pt x 48.87141pt.
 
 
@@ -675,48 +675,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.158 
+l.163 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.158 
+l.163 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.158 
+l.163 
        <./figs/step3/and.png> <./figs/step3/nand.png> <./figs/step3/or.png>]
 <figs/step3/xor.png, id=304, 1360.08125pt x 134.5025pt>
 File: figs/step3/xor.png Graphic file (type png)
 <use figs/step3/xor.png>
-Package pdftex.def Info: figs/step3/xor.png  used on input line 161.
+Package pdftex.def Info: figs/step3/xor.png  used on input line 166.
 (pdftex.def)             Requested size: 430.00462pt x 42.52448pt.
 <figs/step3/xnor.png, id=305, 1360.08125pt x 137.51375pt>
 File: figs/step3/xnor.png Graphic file (type png)
 <use figs/step3/xnor.png>
-Package pdftex.def Info: figs/step3/xnor.png  used on input line 167.
+Package pdftex.def Info: figs/step3/xnor.png  used on input line 172.
 (pdftex.def)             Requested size: 430.00462pt x 43.47652pt.
 <figs/step3/not.png, id=306, 1370.11874pt x 120.45pt>
 File: figs/step3/not.png Graphic file (type png)
 <use figs/step3/not.png>
-Package pdftex.def Info: figs/step3/not.png  used on input line 173.
+Package pdftex.def Info: figs/step3/not.png  used on input line 181.
 (pdftex.def)             Requested size: 430.00462pt x 37.80226pt.
 <figs/step3/shift.png, id=307, 1360.08125pt x 194.7275pt>
 File: figs/step3/shift.png Graphic file (type png)
 <use figs/step3/shift.png>
-Package pdftex.def Info: figs/step3/shift.png  used on input line 179.
+Package pdftex.def Info: figs/step3/shift.png  used on input line 190.
 (pdftex.def)             Requested size: 430.00462pt x 61.56529pt.
 <figs/step3/add.png, id=308, 1356.06625pt x 169.63374pt>
 File: figs/step3/add.png Graphic file (type png)
 <use figs/step3/add.png>
-Package pdftex.def Info: figs/step3/add.png  used on input line 185.
+Package pdftex.def Info: figs/step3/add.png  used on input line 199.
 (pdftex.def)             Requested size: 430.00462pt x 53.7895pt.
-
-Underfull \vbox (badness 1147) has occurred while \output is active []
-
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -731,47 +728,47 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188 
+l.202 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188 
+l.202 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188 
+l.202 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188 
+l.202 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188 
+l.202 
        <./figs/step3/nor.png> <./figs/step3/xor.png> <./figs/step3/xnor.png> <.
 /figs/step3/not.png> <./figs/step3/shift.png>]
 <figs/step3/sub.png, id=319, 1370.11874pt x 167.62625pt>
 File: figs/step3/sub.png Graphic file (type png)
 <use figs/step3/sub.png>
-Package pdftex.def Info: figs/step3/sub.png  used on input line 191.
+Package pdftex.def Info: figs/step3/sub.png  used on input line 208.
 (pdftex.def)             Requested size: 430.00462pt x 52.60814pt.
 <figs/step3/mul.png, id=320, 1391.1975pt x 169.63374pt>
 File: figs/step3/mul.png Graphic file (type png)
 <use figs/step3/mul.png>
-Package pdftex.def Info: figs/step3/mul.png  used on input line 197.
+Package pdftex.def Info: figs/step3/mul.png  used on input line 217.
 (pdftex.def)             Requested size: 430.00462pt x 52.4306pt.
 <figs/step3/div.png, id=321, 1354.05875pt x 153.57375pt>
 File: figs/step3/div.png Graphic file (type png)
 <use figs/step3/div.png>
-Package pdftex.def Info: figs/step3/div.png  used on input line 203.
+Package pdftex.def Info: figs/step3/div.png  used on input line 226.
 (pdftex.def)             Requested size: 430.00462pt x 48.76965pt.
 
 
@@ -787,25 +784,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.230 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.230 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.230 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.230 \newpage
                <./figs/step3/add.png> <./figs/step3/sub.png> <./figs/step3/mul.
 png> <./figs/step3/div.png>]
 
@@ -839,7 +836,7 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb>
-Output written on Report.pdf (12 pages, 283764 bytes).
+Output written on Report.pdf (12 pages, 284547 bytes).
 PDF statistics:
  501 PDF objects out of 1000 (max. 8388607)
  378 compressed objects within 4 object streams
