@@ -251,16 +251,19 @@ Now, we will showcase waveforms created by testing our twelve circuits. All wave
 
 \section{Conclusion}
 
-In this step, we have successfully made 4-bit logic gates, ALU operations, and
-an arithmetic shifter. We have tested them under various general and edge cases.
-GTKWave was used to analyze their waveform behavior.
+In this step, we successfully created a controller for 4-bit ALU operations.
+This could hypothetically be used as the ALU unit for a 4-bit computer given
+implementation of other pipeline phases. We used GTKWave to analyze a
+couple dozen waveforms to show that our ALU works properly when given
+4-bit numbers.
 
-We went into this assignment significantly more familiar with \LaTeX, Verilog,
-and GTKWave. The most difficult part of this assignment was ensuring that the
-ALU operations were working correctly under edge cases. Carry ins and carry outs
-took some time to implement correctly.
+This project step went the smoothest from a workflow perspective. We are
+all quite familiar with Verilog and were able to get a working testbench up
+fairly quickly. \LaTeX provided a clean way to show our results that we made a
+good template for. The hardest part of this assignment was ensuring that the
+control character system we made was working properly.
 
-Git was again used for collaboration.
+Git was used for collaboration.
 
 \end{document}
 

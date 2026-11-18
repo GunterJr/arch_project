@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.11.17)  17 NOV 2026 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.11.17)  17 NOV 2026 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1084,18 +1084,18 @@ Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 229C5153BE1A6443306E33F189B67EF0;2034.
  ) 
 Here is how much of TeX's memory you used:
- 16341 strings out of 475322
- 254219 string characters out of 5771093
+ 16347 strings out of 475322
+ 254273 string characters out of 5771093
  1321511 words of memory out of 5000000
  37703 multiletter control sequences out of 15000+600000
- 608256 words of font info for 148 fonts, out of 8000000 for 9000
+ 608516 words of font info for 152 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  79i,13n,93p,1003b,2105s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Report.pdf (34 pages, 315368 bytes).
+Output written on Report.pdf (34 pages, 315528 bytes).
 PDF statistics:
  1515 PDF objects out of 1728 (max. 8388607)
  1444 compressed objects within 15 object streams
