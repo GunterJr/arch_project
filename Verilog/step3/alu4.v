@@ -55,18 +55,18 @@ module alu4_tb; // testbench has no ports
         OP = 4'b0110; // NOT: ~1010 = 0101
         #10;          
 
-        // 2. Test Arithmetic Shifter (using project specification examples)
-        A = 4'b1011;  // 11[cite: 3]
-        B = 4'b0110;  // left shift by 3, fill with 0[cite: 3]
-        OP = 4'b0111; // Expected: X = 1000, Y = 0101[cite: 3]
+        // Test Arithmetic Shifter 
+        A = 4'b1011;  // 11
+        B = 4'b0110;  // left shift by 3, fill with 0
+        OP = 4'b0111; // Expected: X = 1000, Y = 0101
         #10;          
 
-        A = 4'b0101;  // 5[cite: 3]
-        B = 4'b1101;  // right shift by 2, fill with 1[cite: 3]
-        OP = 4'b0111; // Expected: X = 1101, Y = 0100[cite: 3]
+        A = 4'b0101;  // 5
+        B = 4'b1101;  // right shift by 2, fill with 1
+        OP = 4'b0111; // Expected: X = 1101, Y = 0100
         #10;          
 
-        // 3. Test Arithmetic Operations
+        // Test Arithmetic Operations
         A = 4'b1100;  // 12
         B = 4'b0101;  // 5
         Cin = 1'b0;
@@ -95,7 +95,7 @@ module alu4_tb; // testbench has no ports
         OP = 4'b1011; // DIV by zero: Expected X = 1111, Y = 1110
         #10;          
 
-        // 4. Test Default / Unused Opcode
+        // Test Default / Unused Opcode
         OP = 4'b1111; // Expected: X = 0000, Y = 0000, Cout = 0
         #10;          
 
