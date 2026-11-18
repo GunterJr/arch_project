@@ -83,11 +83,13 @@ be calculated regardless of the requested output; the control code simply
 switches to the output of the desired operation.
 
 \section{Verilog Code}
-\label{sec:headings}
 
 In this section we will show and explain our implementations of the circuits and their testbenches.
 \subsection{Opcodes}
-4 bits are used to determine which operation's result will be outputted from the controller, the list for the operations is as follows:
+4 bits are used to determine which operation's result will be outputted from the controller.
+4 bits are needed since we have 12 operations that can be addressed with 4 bits.
+$$2^3=8 < 12 < 2^4=16$$
+The list for the operations is as follows:
 \begin{center}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -121,10 +123,10 @@ In this section we will show and explain our implementations of the circuits and
 \end{center}
 \subsection{Controller}
 For the controller, we take 4 different inputs. A, B, Cin, and OP. A and B are the 2 inputs, Cin is a carry-in bit for add and sub, and OP is the opcode for the controller. It then runs all 12 operations, and then sets the 3 outputs X, Y, and Cout to the operation's results depending on the opcode given.
-\lstinputlisting[language=Verilog]{Verilog/alu4.v}
+\lstinputlisting[language=Verilog]{Verilog/step3/alu4.v}
 \subsection{Test Bench}
 The test bench loads the inputs for the logic operations, and then iterates the opcode between them, testing each circuit. Then it sets the inputs for 2 different tests of the shifter. Then it sets the 3 inputs for add and sub, and then iterates the opcodes, and then does 2 more groups of inputs for mult and div. Then there is one last test for the unused opcode values.
-\lstinputlisting[language=Verilog]{Verilog/alu4_tb.v} 
+\lstinputlisting[language=Verilog]{Verilog/step3/alu4_tb.v}
 
 \section{Waveform Tests}
 
@@ -132,61 +134,73 @@ Now, we will showcase waveforms created by testing our twelve circuits. All wave
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/and.png}
     \caption{And circuit waveform.} 
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/nand.png}
     \caption{Nand circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/or.png}
     \caption{Or circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/nor.png}
     \caption{Nor circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/xor.png}
     \caption{Xor circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/xnor.png}
     \caption{Xnor circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/not.png}
     \caption{Not circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/shift.png}
     \caption{2$\times$4 bit arithmetic shifter circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/add.png}
     \caption{Adder circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/sub.png}
     \caption{Subtractor circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/mul.png}
     \caption{Multiplier circuit waveform.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width = 1.0\textwidth]{figs/step3/div.png}
     \caption{Divider circuit waveform.}
 \end{figure}
 
