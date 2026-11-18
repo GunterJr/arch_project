@@ -75,13 +75,13 @@
 \newpage
 \setcounter{page}{1}
 \section{Introduction}
-In this project, we are designing a small computer from scratch by using Verilog for
-hardware programming. We will also be using GTKWave to analyze test case waveforms and
-display the inputs and outputs of the gates.
-
-Step 2 involves building upon small 1-bit circuits made in step 1 by increasing
-input size to 4 bits. These new gates will also be supplemented with examples
-of adders, subtractors, multipliers, and dividers commonly used in ALUs.
+Step 3 was the final step in the Verilog project. In this step, we wrapped the
+4-bit ALU operations we made in step 2 inside of a controller. This controller
+can take any two arbitary 4-bit numbers, and perform addition, subtraction,
+multiplucation, division, or shifting. We will also be using the logic gates
+made in the previous section (AND, OR, NAND, etc.) All operations will
+be calculated regardless of the requested output; the control code simply
+switches to the output of the desired operation.
 
 \section{Verilog Code}
 \label{sec:headings}
